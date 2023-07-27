@@ -5,13 +5,13 @@ public class IntOps{
         int sum = a+b;
         int sub= a-b;
         int prod = a*b;
-        int div = a/b;
-        int rem = a%b;
-
         System.out.println(a+" + "+b +" = "+sum);
         System.out.println(a+" - "+b +" = "+sub);
         System.out.println(a+" * "+b +" = "+prod);
-        System.out.println(a+" / "+b +" = "+div);
-        System.out.println(a+" % "+b +" = "+rem);
+        if(b==0) System.out.println("Error! Division by Zero");
+        else     System.out.println(a+" / "+b+" = "+a/b);
+        if(b==0) System.out.println("Division by zero!!!");
+        else     System.out.println(a+" % "+b+" = "+a%b);
+        
     }
 }
