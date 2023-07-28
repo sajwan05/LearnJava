@@ -4,8 +4,8 @@ public class DoubleF {
     public static void main(String[] args){
         double x = Double.parseDouble(args[0]);
         double y = Double.parseDouble(args[1]);
-        boolean isBetween;
-        isBetween = (x>0 && x<1) && (y>0 && y<1);
-        System.out.println(isBetween);
+        if((x>0 && x<1) && (y>0 && y<1)) System.out.println("True");
+        else                           System.out.println("False");
+        
     }
 }
